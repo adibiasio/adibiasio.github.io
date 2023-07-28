@@ -41,10 +41,6 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}h1{font-size:2
 .recentcomments a{display:inline !important;padding:0 !important;margin:0 !important}
 .site-title,.site-description{position:absolute;clip:rect(1px,1px,1px,1px)}
 .btn-group{display:flex;justify-content:center}.button{padding:16px 32px;text-align:center;text-decoration:none;display:inline-block;font-size:16px;margin:4px 2px;-webkit-transition-duration:.4s;transition-duration:.4s;cursor:pointer}.button5{background-color:#fff;color:#000;border:2px solid #555}.button5:hover{background-color:#555;color:#fff;border:2px solid #555}.button5-linkedin{background-color:#0072b1;color:#fff;border:2px solid #0072b1}.button5-linkedin:hover{background-color:#fff;border:2px solid #0072b1}.button5-linkedin:hover svg{fill:#0072b1}svg{fill:#fff}li{visibility:hidden}.mobile-menu-wrapper{visibility:hidden}</style><title>Andrew DiBiasio</title>
-
-
-		
-		
 </head>
 
 
@@ -63,18 +59,11 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}h1{font-size:2
 								<li id="site-navigation" class="main-navigation nav-item" role="navigation">
 									<div id="primary-menu" class="main-menu nav"><ul>
 								</li>
-
 							</ul>
-
-						
 					</div>
-
 				</div>
-
 			</div>
-
 		</div>
-
 	</header>
 
 <div class="fade-in-image">
@@ -93,61 +82,39 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}h1{font-size:2
 			<div class="col-lg-12">
 				<div id="primary" class="content-area">
 					<main id="main" class="site-main">
-						
-
 
 <article id="post-6" class="post-6 page type-page status-publish hentry">
-
-
-
 	<div class="entry-content">
-
 
 <script>
 	function hover(element) {
-		if (element == "github") {
-			document.getElementById("github").src = "images/github-mark-white.png"
-		} else if (element == "linkedin") {
-			document.getElementById("linkedin").src = "images/linkedin-white.png"
-		} else if (element == "resume") {
-			document.getElementById("resume").src = "images/resume-white.png"
-		}
+		document.getElementById(element).src = "images/" + element + "-white.png"
 	}
 	
 	function gone(element) {
-		if (element == "github") {
-			document.getElementById("github").src = "images/github-mark.png"
-		} else if (element == "linkedin") {
-			document.getElementById("linkedin").src = "images/linkedin-blue.png"
-		} else if (element == "resume") {
-			document.getElementById("resume").src = "images/resume-colored.png"
-		}
+		document.getElementById(element).src = "images/" + element + "-colored.png"
 	}
 </script>
 
 <div class="btn-group">
-
-<button onmouseover="hover('resume')" onmouseout="gone('resume')"onclick="window.open(&#39;resume.pdf&#39;,&#39;_blank&#39;)" class="button button5">
-	<img id="resume" src="images/resume-colored.png" alt="GitHub" style="width:50px;height:50px;">
-</button>
-
-<button onmouseover="hover('linkedin')" onmouseout="gone('linkedin')" onclick="window.open(&#39;https://www.linkedin.com/in/andrew-dibiasio-96164721a/&#39;,&#39;_blank&#39;)" class="button button5">
-	<img id="linkedin" src="images/linkedin-blue.png" class="" alt="GitHub" style="width:24px;height:24px;">
-</button>
-
-<button onmouseover="hover('github')" onmouseout="gone('github')" onclick="window.open(&#39;https://github.com/adibiasio&#39;,&#39;_blank&#39;)" class="button button5">
-	<img id="github" src="images/github-mark.png" class="github-icon" alt="GitHub" style="width:50px;height:50px;">
-</button>
-
+	<button title="Resume" onmouseover="hover('resume')" onmouseout="gone('resume')"onclick="window.open(&#39;resume.pdf&#39;,&#39;_blank&#39;)" class="button button5">
+		<img id="resume" src="images/resume-colored.png" alt="GitHub" style="width:50px;height:50px;">
+	</button>
+	<button title="CV" onmouseover="hover('cv')" onmouseout="gone('cv')"onclick="window.open(&#39;cv.pdf&#39;,&#39;_blank&#39;)" class="button button5">
+		<img id="cv" src="images/cv-colored.png" alt="CV" style="width:50px;height:50px;">
+	</button>
+</div>
+<div class="btn-group">
+	<button title="LinkedIn" onmouseover="hover('linkedin')" onmouseout="gone('linkedin')" onclick="window.open(&#39;https://www.linkedin.com/in/andrew-dibiasio-96164721a/&#39;,&#39;_blank&#39;)" class="button button5">
+		<img id="linkedin" src="images/linkedin-colored.png" class="" alt="GitHub" style="width:24px;height:24px;">
+	</button>
+	<button title="GitHub" onmouseover="hover('github')" onmouseout="gone('github')" onclick="window.open(&#39;https://github.com/adibiasio&#39;,&#39;_blank&#39;)" class="button button5">
+		<img id="github" src="images/github-colored.png" class="github-icon" alt="GitHub" style="width:50px;height:50px;">
+	</button>
 </div>
 </div>
-
 </div>
-
-
-
 </article>
-
 					</main>
 				</div>
 			</div>
